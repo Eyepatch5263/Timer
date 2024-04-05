@@ -3,6 +3,7 @@ body{
     background-color: #006dad;
   }
    .container{
+    margin-top:300px;
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -21,8 +22,15 @@ body{
 
 button{
   font-family: Georgia;
-  font-size: 14px;
-  width: 200px;
-  height: 35px;
+  font-size: 18px;
+  width: 220px;
+  height: 38px;
   border-radius: 16px;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
