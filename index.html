@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="index.css">
+  <meta name="description" content="">
+
+
+
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <div class="main">
+    <div class="container">
+      <div>
+        <h1 class="text">B-Quiz</h1>
+      </div>
+      <div>
+        <button onclick="showTime()">Raise Hand</button>
+  </div>
+    </div>
+  </div>
+
+  <audio id="chatAudio" >
+    <source src=
+              "https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3"
+            type="audio/mpeg">
+  </audio>
+
+  <div id="first" style="color:white; margin-top: 10px; display: flex; flex-direction: row; justify-content: center; align-items:center; font-size: 36px ">00:00:00:00</div>
+  <script>
+    function showTime(){
+      var date=new Date()
+      var curr_hour=date.getHours();
+      var cur_min=date.getMinutes();
+      var curr_sec=date.getSeconds();
+      var curr_milliSec=date.getMilliseconds();
+      console.log(curr_hour+":"+cur_min+":"+curr_sec+":"+curr_milliSec)
+      let time=curr_hour+":"+cur_min+":"+curr_sec+":"+curr_milliSec
+      let ans=document.getElementById("first")
+      ans.textContent=time
+      play()
+    }
+    var audio = document.getElementById('chatAudio');
+    function play(){
+      audio.play()
+    }
+  </script>
+
+</body>
+
+</html>
