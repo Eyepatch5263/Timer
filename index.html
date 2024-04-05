@@ -21,11 +21,13 @@
   <div class="main">
     <div class="container">
       
-      <div>
-        <button onclick="showTime()">Raise Hand</button>
-  </div>
+      
     </div>
   </div>
+
+  <div class="btn" style="margin-top: 200px;">
+    <button onclick="showTime()">Raise Hand</button>
+</div>
 
   <audio id="chatAudio" >
     <source src=
@@ -33,7 +35,7 @@
             type="audio/mpeg">
   </audio>
 
-  <div id="first" style="color:white; margin-top: 10px; display: flex; flex-direction: row; justify-content: center; align-items:center; font-size: 36px;  ">00:00:00:00</div>
+  <div id="first" style="color:white; margin-top: 40px; display: flex; flex-direction: row; justify-content: center; align-items:center; font-size: 36px;  ">00:00:00:00</div>
   <script>
     function showTime(){
       var date=new Date()
